@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/style.css">
     <title>FEC Demo</title>
 </head>
 
 <body>
-    <div id="Calendar"></div>
+    <div class="xl-calendar-container" id="Calendar"></div>
     <div id="Reviews"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
+    <script src="/lib/react.production.min.js"></script>
+    <script src="/lib/react-dom.production.min.js"></script>
     <script src="http://localhost:1337/rooms/bundle.js"></script>
+    <script src="http://localhost:1338/rooms/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
+        ReactDOM.render(
+            React.createElement(bookings),
+            document.getElementById('Calendar')
+        )
         ReactDOM.render(
             React.createElement(review),
             document.getElementById('Reviews')
