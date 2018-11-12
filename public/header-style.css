@@ -1,0 +1,74 @@
+.App-header {
+  font-family: "Cabin", sans-serif;
+
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  min-height: 80px;
+  border-bottom: 0.5px solid black;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  /* vertical-align: center; */
+  justify-content: flex-start;
+}
+
+.nav-bar-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 40px 0 0;
+}
+
+.header-header {
+  /* min-height: 80px; */
+  border-bottom: 0.3px solid black;
+}
+
+.search-form-nav-header {
+  margin: 1em;
+  min-width: 70%;
+  width: 500px;
+  font-size: 0.8em;
+  vertical-align: center;
+  /* max-height: 2.4em; */
+  height: 40px;
+  box-shadow: 0 0.2px 0.4px;
+  border-radius: 4px;
+}
+
+.search-form-nav-header:hover {
+  transition: box-shadow 200ms ease-in;
+}
+
+.logo-img-header {
+  align-content: center;
+  vertical-align: center;
+}
+
+.nav-button-header {
+  box-sizing: border-box;
+  padding: 30px 14px;
+  text-align: center;
+  /* width: 12vh; */
+  height: 100%;
+  display: inline-block;
+  float: right;
+  /* border: 1px solid black; */
+  margin-bottom: 5px;
+}
+
+.nav-button-header:hover {
+  cursor: pointer;
+  border-bottom: 0.5px solid grey;
+}
+
+.nav-button-container-header {
+  /* display: flex; */
+  margin: auto 0;
+  vertical-align: center;
+  align-items: flex-end;
+  /* width: 100%; */
+}

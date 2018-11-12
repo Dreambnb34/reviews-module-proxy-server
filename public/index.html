@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400"
+      rel="stylesheet"
+    />
+    <!--
+      <link
+        rel="stylesheet"
+        href="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/styles.css"
+      />
+    -->
+    <!--
+      <link
+        rel="stylesheet"
+        href="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/style.css"
+      />
+    -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/styles.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/style.css">
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/gallery-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/header-style.css"
+    />
     <title>FEC Demo</title>
-</head>
+  </head>
 
-<body>
-    <div class="xl-calendar-container" id="Calendar"></div>
-    <div id="Reviews"></div>
-    <script src="/lib/react.production.min.js"></script>
-    <script src="/lib/react-dom.production.min.js"></script>
-    <script src="http://localhost:1337/rooms/bundle.js"></script>
-    <script src="http://localhost:1338/bundle.js"></script>
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <script>
-        ReactDOM.render(
-            React.createElement(bookings),
-            document.getElementById('Calendar')
-        )
-        ReactDOM.render(
-            React.createElement(review),
-            document.getElementById('Reviews')
-        );
-    </script>
-</body>
+  <body>
+    <div id="Header"></div>
+    <div id="app"></div>
+    <div class="main-container">
+      <div class="xl-calendar-container" id="availability"></div>
+      <div id="Reviews"></div>
+    </div>
 
+    <script src="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/bookings.js"></script>
+
+    <script src="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/review.js"></script>
+
+    <!-- <script src="/review.js"></script> -->
+    <script src="https://s3.us-east-2.amazonaws.com/hrr34-jaypatrickdeguzman-fec/fec-group-assets/gallery.js"></script>
+  </body>
 </html>

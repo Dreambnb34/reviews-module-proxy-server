@@ -157,6 +157,7 @@ td {
 }
 
 .availability-header {
+  padding: 2vh 0;
   display: block;
   border-top: 1px solid lightgray;
   width: auto;
